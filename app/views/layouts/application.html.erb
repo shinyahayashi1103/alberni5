@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alberni5</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class = "container">
+      <h1>ALBERNI</h1>
+      <h2>メニューバー</h2>
+      <a href="/" class="btn btn-danger">top</a>
+      <a href="/menu" class="btn btn-primary">menu</a>
+      <a href="/owner" class="btn btn-info">owner</a>
+      <a href="/calendar" class="btn btn-warning">calendar</a>
+    
+      <%= yield %>
+    </div>
+  </body>
+</html>
